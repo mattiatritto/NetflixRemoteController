@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/fullscreen_button"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/fullscreen"
+            android:onClick="fullscreenPressed"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/back_button"
+            android:layout_width="78dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            android:onClick="backPressed"
+            android:textOff="    "
+            android:textOn="       " />
+
+        <ToggleButton
+            android:id="@+id/play_pause_button"
+            android:layout_width="78dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:background="@drawable/play"
+            android:onClick="playPausePressed"
+            android:textOff="    "
+            android:textOn="       " />
+
+        <ToggleButton
+            android:id="@+id/forward_button"
+            android:layout_width="78dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:background="@drawable/forward"
+            android:onClick="forwardPressed"
+            android:textOff="    "
+            android:textOn="       " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/audio_button"
+            android:layout_width="79dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:background="@drawable/audio_on"
+            android:onClick="audioPressed"
+            android:textOff="       "
+            android:textOn="        " />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ipText"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:onClick="updateIP"
+        android:singleLine="false"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="80px" />
+
+</LinearLayout>
